@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "FullName": "Cameron Tamboer",
+      "email": "cameron@gmail.com",
+      "password": "hithere"
+    },
+    {
+      "id": 2,
+      "FullName": "Hilmi Mallick",
+      "email": "hilmi@gmail.com",
+      "password": "hithere"
+    },
+    {
+      "id": 3,
+      "FullName": "Ashwin Jacobs",
+      "email": "ashwin@gmail.com",
+      "password": "hithere"
+    },
+    {
+      "id": 4,
+      "FullName": "Smangele Mntungwa",
+      "email": "smangele@gmail.com",
+      "password": "hithere"
+    },
+    {
+      "FullName": "Cameron Tamboer",
+      "email": "tamboer@gmail.com",
+      "password": "password",
+      "id": 5
+    }
+  ]
+}
