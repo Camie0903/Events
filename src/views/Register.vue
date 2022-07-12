@@ -25,7 +25,7 @@ export default {
             return this.$store.state.users
         }
     },
-    methods: {
+    methods: {   
         register() {
            return this.$store.dispatch("register", {FullName: this.FullName, email: this.email, password: this.password} )
     },
