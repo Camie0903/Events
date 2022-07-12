@@ -29,6 +29,42 @@
       "email": "tamboer@gmail.com",
       "password": "password",
       "id": 5
+    },
+    {
+      "FullName": "dude",
+      "email": "dude@gmail.com",
+      "password": "password",
+      "id": 6
+    },
+    {
+      "FullName": "dude",
+      "email": "dude@gmail.com",
+      "password": "password",
+      "id": 7
+    },
+    {
+      "FullName": "dude",
+      "email": "dude@gmail.com",
+      "password": "password",
+      "id": 8
+    },
+    {
+      "FullName": "iuhgf",
+      "email": "iuhgf@gmail.com",
+      "password": "password",
+      "id": 9
+    },
+    {
+      "FullName": "good",
+      "email": "good@gmail.com",
+      "password": "password",
+      "id": 10
+    },
+    {
+      "FullName": "zachary",
+      "email": "zach@gmail.com",
+      "password": "passsword",
+      "id": 11
     }
   ]
 }

@@ -6,6 +6,9 @@
             <input type="text" v-model="password" placeholder="Password">
             <button type="submit">Register</button>
         </form>
+         <div v-if="users">
+            Welcome {{ users.FullName }}
+        </div> 
     </div>
 </template>
 <script>
@@ -15,26 +18,18 @@ export default {
             FullName: "",
             email: "",
             password: "",
-            user: null
+        }
+    },
+    computed: {
+        users() {
+            return this.$store.state.users
         }
     },
     methods: {
         register() {
-            fetch('http://localhost:3000/users', {
-                method: 'POST',
-                body: JSON.stringify({
-                    FullName: this.FullName,
-                    email: this.email,
-                    password: this.password,
-                }),
-                headers: {
-                    'Content-type': 'application/json; charset=UTF-8',
-                },
-                })
-                .then((response) => response.json())
-                .then((json) => console.log(json));
-        }
+           return this.$store.dispatch("register", {FullName: this.FullName, email: this.email, password: this.password} )
     },
+}
 }
 </script>
 <style>

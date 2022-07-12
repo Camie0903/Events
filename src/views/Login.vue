@@ -5,16 +5,16 @@
             <input type="text" v-model="password" placeholder="Password">
             <button type="submit">Login</button>
         </form>
-        <div v-if="user">
-            Welcome {{ user.FullName }}
+        <div v-if="users">
+            Welcome {{ users.FullName }}
         </div>
     </div>
 </template>
 <script>
 export default {
     computed: {
-        user() {
-            return this.$store.state.user;
+        users() {
+            return this.$store.state.users;
         }
     },
     data() {
@@ -25,7 +25,7 @@ export default {
     },
     methods: {
         login() {
-           this.$store.dispatch("login", { email: this.email, passsword: this.password })
+           this.$store.dispatch("login", { email: this.email, password: this.password })
         },
     },
 };
