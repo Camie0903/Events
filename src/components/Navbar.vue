@@ -2,14 +2,20 @@
   <header :class="{ 'scrolled-nav': scrollPosition }">
     <nav class="branding">
       <ul v-show="!mobile" class="navigation">
-        <li>
+        <!-- <li>
           <router-link class="link" to="/">Home</router-link>
+        </li> -->
+        <li>
+          <router-link class="link" to="/landing">Landing</router-link>
         </li>
         <li>
           <router-link class="link" to="/about">About</router-link>
         </li>
         <li>
-          <router-link class="link" to="/landing">test</router-link>
+          <router-link class="link" to="/login">Login</router-link>
+        </li>
+        <li>
+          <router-link class="link" to="/register">Register</router-link>
         </li>
       </ul>
       <div class="icon">
@@ -22,14 +28,20 @@
       </div>
       <transition name="mobile-nav">
         <ul v-show="mobileNav" class="dropdown-nav">
-          <li>
+          <!-- <li>
             <router-link class="link" to="/">Home</router-link>
+          </li> -->
+          <li>
+            <router-link class="link" to="/landing">Landing</router-link>
           </li>
           <li>
             <router-link class="link" to="/about">About</router-link>
           </li>
           <li>
-            <router-link class="link" to="/landing">test</router-link>
+            <router-link class="link" to="/login">Login</router-link>
+          </li>
+          <li>
+            <router-link class="link" to="/register">Register</router-link>
           </li>
         </ul>
       </transition>

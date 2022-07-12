@@ -1,5 +1,9 @@
 <template>
   <div id="bpic">
+    <img
+      class="logo"
+      src="https://i.postimg.cc/htJ3Nnbw/7f6b07f12af14ab2a682cf76089fcf6a-1.png"
+    />
     <div class="container">
       <div class="heading">
         <h1><u>CASH EVENTS</u></h1>
@@ -27,6 +31,8 @@ export default {};
   height: 98vh;
   display: flex;
   justify-content: center;
+  padding-right: 178px;
+  padding-bottom: 35px;
 }
 
 .heading {
@@ -55,5 +61,12 @@ export default {};
   border-radius: 10px;
   background-clip: padding-box;
   margin-bottom: 80px;
+}
+
+.logo {
+  margin-top: 60px;
+  height: 14vh;
+  width: 10vw;
+  border-radius: 25%;
 }
 </style>
