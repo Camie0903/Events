@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="Login"> <h1>Welcome Please Login</h1>
         <form @submit.prevent="login">
             <input type="text" v-model="email" placeholder="Email">
             <input type="text" v-model="password" placeholder="Password">
@@ -30,6 +30,11 @@ export default {
     }, 
 };
 </script>
-<style>
+<style scoped>
+.Login{
+  padding-top: 100px;
+ margin-left: 35%;
+}
+
     
 </style>
