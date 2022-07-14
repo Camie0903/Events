@@ -22,10 +22,14 @@ body {
 label {
   font-weight: 600;
   text-transform: uppercase;
+  font-size: larger;
 }
 table {
   width: 100%;
   padding-left: 10vw;
+}
+.talk {
+  font-size: 25px;
 }
 
 th,
