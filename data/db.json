@@ -70,145 +70,145 @@
 
     "Events": [
       {
-        "ID": "1",
+        "id": 1,
         "Title": "Wedding",
-        "Date": "7 May 2022",
+        "Date": "7 May 2023",
         "Type": "private Event",
         "Img": "https://i.postimg.cc/CKYmpVh4/guanfranco-g-82p7-Jgz-KOpo-unsplash.jpg",
         "Description": "Our Estate is a place which is as unique as your love for each other and as unforgettable as your first encounter, since our Estate lies in a picturesque location that gives an all nature yet modern influence. Why not have your wedding at our Estate we offer you warm hospitality and a comprehensive range of services."
       },
       {
-        "ID": "2",
+        "id": 2,
         "Title": "Open Air Cinema",
-        "Date": "20 March",
+        "Date": "20 March 2023",
         "Type": "Public Event",
         "Img": "https://i.postimg.cc/2SJ2cX3z/home-bkg.jpg",
         "Description": "The C-A-S-H Open Air Cinema invites you to enjoy a magical outdoor movie experience underneath a canopy of stars! Doors open at 6pm. We recommend arriving early to create special memories with your loved ones before the movie starts at sunset. Tickets on sale ! "
       },
       {
-        "ID": "3",
+        "id": 3,
         "Title": "Pop bottles",
-        "Date": "31st Dec",
+        "Date": "31st Dec 2023",
         "Type": "Public Event",
         "Img": "https://i.postimg.cc/SKy7t7dT/pablo-heimplatz-ZODc-Bk-Eohk8-unsplash.jpg",
         "Description": "Pop Bottles is an urban hip-hop event that's all about lifestyling and offers guests a unique and exclusive experience. Join us as we COUNT DOWN TO A NEW YEAR! DJ Line up to be announced! Tickets on sale! "
       },
       {
-        "ID": "4",
+        "id": 4,
         "Title": "Staff party",
-        "Date": "19 November",
+        "Date": "19 November 2023",
         "Type": "Private Event",
         "Img": "https://i.postimg.cc/yYgfFPp0/samantha-gades-f-IHoz-NWfcvs-unsplash.jpg",
         "Description": "Looking for ways to celebrate your team?  At the end of a successful quarter or to motivate them going into the new year you may want to throw a party for your staff. We are an experienced restaurant and venue that can be to your advantage as we are well equipped to manage the catering and other food and beverage so you dont have to."
       },
       {
-        "ID": "5",
+        "id": 5,
         "Title": "ITS A YAAARD SALE !",
-        "Date": "20 June",
+        "Date": "20 June 2023",
         "Type": "Public Event",
         "Img": "https://i.postimg.cc/C5Z4sh7w/kyle-nieber-e-E-ff-Apg7o-I-unsplash.jpg",
         "Description": "Please join us on our annual yard sale which assists to buy equipment that we will need for the schools renovations, this year we have two schools to renovate. No bookings required, please visit our main website for more details."
       },
       {
-        "ID": "6",
+        "id": 6,
         "Title": "Wine Tasting",
-        "Date": "9 January",
+        "Date": "9 January 2023",
         "Type": "Public Event",
         "Img": "https://i.postimg.cc/JzH9zmWV/chelsea-pridham-Pj1-JHHRq-D3c-unsplash.jpg",
         "Description": "Join us under the oak trees to taste a wide variety of OUR finest wines.We also have delicious platters, featuring the best of our farm produce, to enjoy alongside your tasting.Theres no better place to spend the day than surrounded by lush greenery and magnificent mountain views."
       },
       {
-        "ID": "7",
+        "id": 7,
         "Title": "Doek-on-feek",
-        "Date": "9 August",
+        "Date": "9 August 2023",
         "Type": "Public Event",
         "Img": "https://i.postimg.cc/j2ySmjHs/httpsi-postimg-ccht5v-C41-FFVt-JTvn-WAAMGm-DQ-jpg.jpg",
         "Description": "Doek on fleek is a Womens social gathering that seeks to eradicate the pull her down syndrome and promote the empowering, supporting and uplifting each other's attitude and way of life. Women from different backgrounds, countries, ethnicities to come together inspire, motivate and Love each other."
       },
       {
-        "ID": "8",
+        "id": 8,
         "Title": "Chocolate Doughnut Tasting",
-        "Date": "7 January",
+        "Date": "7 January 2023",
         "Type": "Public Event",
         "Img": "https://i.postimg.cc/FRC2scQr/doughnuts-1868573-1920.jpg",
         "Description": "To all foodies or those with a sweet tooth, we offer a small but excellent selection of chocolate tasting options that are not to be missed!"
       },
       {
-        "ID": "9",
+        "id": 9,
         "Title": "Art gallary exhibition",
-        "Date": "9 April",
+        "Date": "9 April 2023",
         "Type": "Public Event",
         "Img": "https://i.postimg.cc/FRj7Mjd6/httpsi-postimg-cctg-J00-DLSart-gallary-jpg.jpg",
         "Description": "Please join us as we host a gallary exhibition where we host a number of local arts to show case and sell their work pieces!"
       },
       {
-        "ID": "10",
+        "id": 10,
         "Title": "Comedy Festival",
-        "Date": "5 July",
+        "Date": "5 July 2023",
         "Type": "Public Event",
         "Img": "https://i.postimg.cc/NMhKCNMT/httpsi-postimg-cc-Gtq-J1-J0-Kcomedy-jpg.jpg",
         "Description": "South Africa's oldest and foremost comedy festival showcasing the best local stand-up comedians together with top international variety acts."
       },
       {
-        "ID": "11",
+        "id": 11,
         "Title": "Music festival",
-        "Date": "17 April",
+        "Date": "17 April 2023",
         "Type": "Public Event",
         "Img": "https://i.postimg.cc/fLRCkj0t/marcus-neto-gio-H4g-Ho0-g-unsplash.jpg",
         "Description": "We are delighted to announce our one-day music festival, we offer a picnic set-up blackets will be available on hire. This is an ALL FAMILY EVENT!"
       },
       {
-        "ID": "12",
+        "id": 12,
         "Title": "Seminar",
-        "Date": "30 August",
+        "Date": "30 August 2023",
         "Type": "Private Event",
         "Img": "https://i.postimg.cc/4dMHvLTr/csm-header-seminar-outdoor-baechlein-schwechat-3ee5065176.jpg",
         "Description": "We will be hosting a seminar that will have a set-up less formal than a class lecture, for a small group to meet and discuss academic topics or required reading,  as well as set goals for research and continuing investigations. To book for a similar event please book on the main website."
       },
       {
-        "ID": "13",
+        "id": 13,
         "Title": "MOJO MARKET",
-        "Date": "20 May ",
+        "Date": "20 May 2023 ",
         "Type": "Public Event",
         "Img": "https://i.postimg.cc/269xB76t/best-markets-cape-town.jpg",
         "Description": "The MOJO Market, is where you'll find all the lovely international foods. It is a place where you will meet new people and a place where you could enjoy nothing but good vibes!! Bring family and friends and enjoy live music with open bars and many more."
       },
       {
-        "ID": "14",
+        "id": 14,
         "Title": "Speed dating",
-        "Date": "14 February",
+        "Date": "14 February 2023",
         "Type": "Public Event",
         "Img": "https://i.postimg.cc/wBSD2mw3/httpsi-postimg-cc-Wbpf8s4wwine-1951413-1920-jpg.jpg",
         "Description": "It's the month of love, Havent yet found your soulmate? Well dont yet just give up, put your suit & tie or heels & dresses and come enjoy yourself with meeting your match. Lots of entertainment will be showcased, so don't be afraid of stepping out of your comfort-zone. See you there!"
       },
       {
-        "ID": "15",
+        "id": 15,
         "Title": "Micheal Jackson Concert",
-        "Date": "25 May",
+        "Date": "25 May 2023",
         "Type": "Public Event",
         "Img": "https://i.postimg.cc/SKzy62XZ/httpsi-postimg-ccgj7cg-N3-Varchitecture-3221354-1920-jpg.jpg",
         "Description": "The King of Pop, Micheal Jackson, has returned and bound to give us a another banger where he will be performing live on the 25 May, so dont forget to buy your tickets and show up to experince the time of your life, don't keep the fun to yourself but bring your family and friends along."
       },
       {
-        "ID": "16",
+        "id": 16,
         "Title": "Team-building",
-        "Date": "18 June",
+        "Date": "18 June 2023",
         "Type": "Private Event",
         "Img": "https://i.postimg.cc/nL9sk8Hp/httpsi-postimg-ccx-CF1-Dcx-Hteam-building-jpg.jpg",
         "Description": "We will be hosting a team-building on this day. The goal of this type of event is to foster better communication and collaboration among team members,  as well as to improve employee happiness. To book for a similar event please book on the main website."
       },
       {
-        "ID": "17",
+        "id": 17,
         "Title": "Health day",
-        "Date": "1 December",
+        "Date": "1 December 2023",
         "Type": "Public Event",
         "Img": "https://i.postimg.cc/3NLHP6tw/health-httpsi-postimg-cc-G2-Vh-QXFkhealth-726885-1920-jpg.jpg",
         "Description": "The theme for this year's Health Day is Our Planet, Our Health Amid the ongoing pandemic and pollution growing on the planet diseases like cancer asthma and heart diseases are increasing rapidly."
       },
       {
-        "ID": "18",
+        "id": 18,
         "Title": "POP-UP-RESTURANT",
-        "Date": "16 January",
+        "Date": "16 January 2023",
         "Type": "Public Event",
         "Img": "https://i.postimg.cc/7Lf82mYv/httpsi-postimg-cc-Vv-Mwf13hresturant-jpg.jpg",
         "Description": "Looking for a PERFECT DATE NIGHT? Here's a night to take your pallete on an adventure with a gourmet three course meal. Look at the main website for more information."

@@ -1,11 +1,12 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHistory } from "vue-router";
+import HomeView from "../views/HomeView.vue";
+import oneCard from "@/views/oneCard.vue"
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: "/",
+    name: "home",
+    component: HomeView,
   },
   {
     path: '/about',
@@ -24,12 +25,30 @@ const routes = [
     path: '/register',
     name: 'register',
     component: () => import('../views/Register.vue')
+  },
+  {
+    path: "/home",
+    name: "home",
+    component: () => import("../views/Home.vue"),
+  },
+
+  {
+    path: "/Events",
+    name: "Events",
+    component: () => import("../views/Events.vue"),
+  },
+
+  {
+    path: "/Events/:id",
+    name: "oneCard",
+    component: oneCard,
+    props: true,
   }
 ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
