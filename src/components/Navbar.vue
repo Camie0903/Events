@@ -41,8 +41,8 @@
             <router-link class="link" to="/about">About</router-link>
           </li>
           <li>
-          <router-link class="link" to="/Events">All Events</router-link>
-        </li>
+            <router-link class="link" to="/Events">All Events</router-link>
+          </li>
           <li>
             <router-link class="link" to="/login">Login</router-link>
           </li>
@@ -101,9 +101,9 @@ nav {
   width: 100%;
   margin: 0;
   position: fixed;
-   background-color: rgba(0, 0, 0, 0.8);
-   z-index: 99;
-   height: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  height: 50px;
 }
 
 ul,
