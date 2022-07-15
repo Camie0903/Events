@@ -1,7 +1,7 @@
 <template>
   <tr>
-    <td class="email">
-      {{ event.Img }}
+    <td class="image">
+      <img :src="event.Img" />
     </td>
     <td class="date">
       {{ event.Title }}
@@ -15,7 +15,7 @@
     <td class="email">
       {{ event.Type }}
     </td>
-
+    <td><button @click="deleteEvent(event.id)">Delete</button></td>
     <!-- <td class="commenter"><i class="fas fa-angle-down"></i></td>
     <td class="activeUser"><i class="fas fa-angle-down"></i></td> -->
   </tr>
@@ -23,6 +23,19 @@
 <script>
 export default {
   props: ["event"],
+  methods: {
+    deleteEvent(id) {
+      return this.$store.dispatch("deleteEvent", id);
+    },
+  },
 };
 </script>
-<style></style>
+<style scoped>
+img,
+svg {
+  vertical-align: middle;
+  width: 80px;
+  height: 50px;
+}
+</style>
+>

@@ -14,12 +14,21 @@
         <li>
           <router-link class="link" to="/Events">All Events</router-link>
         </li>
-        <li>
-          <router-link class="link" to="/login">Login</router-link>
-        </li>
-        <li>
-          <router-link class="link" to="/register">Register</router-link>
-        </li>
+
+        <div v-if="!User">
+          <li>
+            <router-link class="link" to="/login">Login</router-link
+            ><span>|</span>
+            <router-link class="link" to="/register">Register</router-link>
+          </li>
+        </div>
+        <div v-else>
+          <li>
+            <router-link class="link" to="/login" @click="logout"
+              >Logout {{ User.FullName }}</router-link
+            >
+          </li>
+        </div>
       </ul>
       <div class="icon">
         <i
@@ -43,18 +52,24 @@
           <li>
             <router-link class="link" to="/Events">All Events</router-link>
           </li>
-          <li>
-            <router-link class="link" to="/login">Login</router-link>
-          </li>
-          <li>
-            <router-link class="link" to="/register">Register</router-link>
-          </li>
+          <div v-if="!User">
+            <li>
+              <router-link class="link" to="/login">Login</router-link>
+            </li>
+            <li>
+              <router-link class="link" to="/register">Register</router-link>
+            </li>
+          </div>
+          <div v-else>
+            <button @click="logout">Logout {{ User.FullName }}</button>
+          </div>
         </ul>
       </transition>
     </nav>
   </header>
 </template>
 <script>
+import store from "@/store";
 export default {
   name: "Navbar",
   data() {
@@ -65,12 +80,19 @@ export default {
       windowWidth: null,
     };
   },
-
+  computed: {
+    User() {
+      return store.state.users;
+    },
+  },
   created() {
     window.addEventListener("resize", this.checkScreen);
   },
 
   methods: {
+    logout() {
+      store.dispatch("logout");
+    },
     toggleMobileNav() {
       this.mobileNav = !this.mobileNav;
     },
@@ -88,6 +110,7 @@ export default {
   },
 };
 </script>
+
 <style>
 header {
   width: 100%;
@@ -101,7 +124,7 @@ nav {
   width: 100%;
   margin: 0;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(29, 27, 27, 0.258);
   z-index: 99;
   height: 50px;
 }

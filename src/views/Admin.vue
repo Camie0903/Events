@@ -1,4 +1,14 @@
 <template>
+  <div class="adform">
+    <form @submit.prevent="createEvent()">
+      <input type="text" v-model="Image" placeholder="IMG URL" />
+      <input type="text" v-model="title" placeholder="Title" />
+      <input type="text" v-model="date" placeholder="Date" />
+      <input type="text" v-model="type" placeholder="Description" />
+      <input type="text" v-model="Description" placeholder="Type" />
+      <button type="submit">ADD</button>
+    </form>
+  </div>
   <div class="row">
     <span>
       <ul>
@@ -9,48 +19,63 @@
 
     <div class="filter-ui">
       <label for="filters">Show me</label>
-      <div class="styled-select">
-        <select name="accountStatus" id="filters">
-          <option value="active">All Events</option>
-          <option value="active">public</option>
-          <option value="active">private</option>
-          <optgroup label="Audience">
-            <option value="Guest">Guest</option>
-          </optgroup>
-          <optgroup label="Organization">
-            <option value="Admins">Admins</option>
-          </optgroup>
-        </select>
-      </div>
-
+      <div class="styled-select"></div>
+      <input type="text" v-model="search" placeholder="Search..." />
       <table>
         <tr class="table-header">
-          <th>Image URL</th>
+          <th>Image</th>
           <th>Title</th>
           <th>Date</th>
           <th>Description</th>
           <th class="statusHead">Type</th>
         </tr>
-        <UserCard v-for="event in Events" :key="event.id" :event="event" />
+        <AdminCard
+          v-for="event in filteredEvents"
+          :key="event.id"
+          :event="event"
+        />
       </table>
     </div>
   </div>
 </template>
+
 <script>
-import UserCard from "../components/Admintable.vue";
+import AdminCard from "../components/Admintable.vue";
 export default {
-  components: { UserCard },
+  components: { AdminCard },
   data() {
     return {
+      search: "",
       Events: [],
+      id: "",
+      title: "",
+      date: "",
+      type: "",
+      Img: "",
+      Description: "",
     };
   },
 
+  computed: {
+    filteredEvents() {
+      return this.$store.state.Events?.filter((event) => {
+        return event.Type?.toLowerCase().includes(this.search.toLowerCase());
+      });
+    },
+  },
   mounted() {
-    fetch("http://localhost:3000/Events")
-      .then((res) => res.json())
-      .then((data) => (this.Events = data))
-      .catch((err) => console.log(err.message));
+    this.$store.dispatch("getEvents");
+  },
+
+  methods: {
+    createEvent() {
+      return this.$store.dispatch("createEvent", {
+        Title: this.title,
+        Date: this.date,
+        Type: this.type,
+        Description: this.Description,
+      });
+    },
   },
 };
 </script>
@@ -62,6 +87,18 @@ body {
   letter-spacing: 0.2px;
 }
 
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 3px;
+  text-align: center;
+}
+
 .container {
   width: 100%;
   margin: auto;
@@ -71,11 +108,12 @@ body {
 label {
   font-weight: 600;
   text-transform: uppercase;
-  font-size: larger;
+  font-size: 27px;
+  padding-left: 41px;
 }
 table {
   width: 100%;
-  padding-left: 10vw;
+  padding-right: 33px;
 }
 .talk {
   font-size: 25px;
@@ -84,26 +122,13 @@ table {
 th,
 td {
   padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 150px;
+  text-align: center;
 }
 
 th {
   text-align: left;
   background-color: #f2f2f2;
   color: #65696b;
-}
-
-tr:nth-child(odd) {
-  background: #f9f9f9;
-  border-top: 1px solid transparent;
-  border-left: 1px solid transparent;
-}
-
-tr:nth-child(even) {
-  background: #fff;
-  border-top: 1px solid transparent;
-  border-left: 1px solid transparent;
 }
 
 tr:hover {
@@ -125,12 +150,6 @@ a:hover {
 
 .commenter {
   color: #9a9da0;
-}
-
-.admin,
-.staff,
-.moderator {
-  font-weight: 600;
 }
 
 a {
@@ -159,6 +178,9 @@ nav ul li {
 .active {
   background-color: #f77160;
   color: white;
+  margin-right: 36px;
+  text-align: center;
+  font-size: 26px;
 }
 
 .roleHead {
@@ -174,16 +196,6 @@ i {
   padding: 0px 15px;
   color: #787d80;
   font-size: 12px;
-}
-
-td.activeUser:hover,
-td.suspendedUser:hover,
-td.bannedUser:hover,
-td.commenter,
-td.staff,
-td.admin,
-td.moderator {
-  cursor: pointer;
 }
 
 tr.table-header {
@@ -251,4 +263,7 @@ input[type="text"] {
   font-size: 13px;
 }
 
+.adform {
+  padding-top: 60px;
+}
 </style>
