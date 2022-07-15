@@ -1,13 +1,13 @@
 <template>
     <div class="col-md-3">
-    <router-link :to="{ name: 'oneCard', params: { id: event.id } }">
+    <router-link class="router-text" :to="{ name: 'oneCard', params: { id: event.id } }">
       <div class="card m-3" style="width: 18rem">
         <img v-bind:src="event.Img" class="img-fluid" />
         <div class="card-body">
-          <p class="card-text">{{ event.Title }}</p>
-          <p class="card-text">{{ event.Date }}</p>
-          <p class="card-text">{{ event.Type }}</p>
-          <p class="card-text">{{ event.Description }}</p>
+          <p class="card-text-event">{{ event.Title }}</p>
+          <p class="card-text-event">{{ event.Date }}</p>
+          <p class="card-text-event">{{ event.Type }}</p>
+          <p class="card-text-event">{{ event.Description }}</p>
         </div>
       </div>
     </router-link>
@@ -30,4 +30,9 @@
 .img-fluid:hover {
   transform: scale(1.1);
 }
+.router-text{
+  text-decoration: none;
+  color: black;
+}
+
 </style>

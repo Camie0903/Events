@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="regis-page">
     <h1>If You Are Not A User Please Register ...</h1>
     <form @submit.prevent="register">
       <input type="text" v-model="FullName" placeholder="Full Name" />
@@ -45,5 +45,8 @@ h1 {
   display: flex;
   justify-content: center;
   padding-top: 100px;
+}
+.regis-page{
+ height: 80vh;
 }
 </style>

@@ -26,4 +26,12 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+body{
+   background: linear-gradient(
+    75deg,
+    rgb(36, 134, 224),
+    rgb(121, 247, 247),
+    rgb(182, 105, 218)
+  );
+}
 </style>

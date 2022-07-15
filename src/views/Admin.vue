@@ -6,21 +6,18 @@
       <input type="text" v-model="date" placeholder="Date" />
       <input type="text" v-model="type" placeholder="Description" />
       <input type="text" v-model="Description" placeholder="Type" />
-      <button type="submit">ADD</button>
+      <button type="submit"><i class="fa-solid fa-circle-plus"></i></button>
     </form>
   </div>
   <div class="row">
+      <input type="text" v-model="search" placeholder="Search..." />
     <span>
       <ul>
         <li class="talk">C-A-S-H</li>
         <li class="active">EVENTS</li>
       </ul>
     </span>
-
     <div class="filter-ui">
-      <label for="filters">Show me</label>
-      <div class="styled-select"></div>
-      <input type="text" v-model="search" placeholder="Search..." />
       <table>
         <tr class="table-header">
           <th>Image</th>
@@ -28,6 +25,7 @@
           <th>Date</th>
           <th>Description</th>
           <th class="statusHead">Type</th>
+          <th>Delete</th>
         </tr>
         <AdminCard
           v-for="event in filteredEvents"
@@ -80,12 +78,12 @@ export default {
 };
 </script>
 <style scoped>
-body {
+/* body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 14px;
   color: #787d80;
   letter-spacing: 0.2px;
-}
+} */
 
 tbody,
 td,
@@ -105,12 +103,7 @@ tr {
   top: 10px;
 }
 
-label {
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 27px;
-  padding-left: 41px;
-}
+
 table {
   width: 100%;
   padding-right: 33px;
@@ -137,7 +130,7 @@ tr:hover {
   border: 1px solid #67b2e4;
 }
 
-.username {
+/* .username {
   color: #3498db;
 }
 
@@ -146,18 +139,18 @@ a:hover {
   color: #3498db;
   cursor: pointer;
   text-decoration: underline;
-}
+} */
 
-.commenter {
+/* .commenter {
   color: #9a9da0;
-}
+} */
 
-a {
+/* a {
   color: #3498db;
   text-decoration: none;
-}
+} */
 
-nav {
+/* nav {
   padding-left: 20px;
   padding-right: 20px;
   border-bottom: 1px solid #e9e9e9;
@@ -173,10 +166,11 @@ nav ul li {
   text-align: center;
   padding: 20px 16px;
   text-decoration: none;
-}
+} */
 
 .active {
-  background-color: #f77160;
+   background-color: rgba(64, 63, 77, 0.7);
+  backdrop-filter: blur(3px);
   color: white;
   margin-right: 36px;
   text-align: center;

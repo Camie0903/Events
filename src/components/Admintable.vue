@@ -15,7 +15,8 @@
     <td class="email">
       {{ event.Type }}
     </td>
-    <td><button @click="deleteEvent(event.id)">Delete</button></td>
+    <td><i  @click="deleteEvent(event.id)" class="fa-solid fa-trash-can"></i></td>
+    <!-- <td><button @click="deleteEvent(event.id)">Delete</button></td> -->
     <!-- <td class="commenter"><i class="fas fa-angle-down"></i></td>
     <td class="activeUser"><i class="fas fa-angle-down"></i></td> -->
   </tr>

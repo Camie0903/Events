@@ -1,11 +1,9 @@
 <template>
-   <div>
-    <h1>Single card</h1>
-    <p>{{ id }}</p>
+   <div class="onecard">
     <div v-if="event">
       <div class="d-flex justify-content-center">
-        <div class="card" style="width: 18rem">
-          <img v-bind:src="event.Img" class="img-fluid" />
+        <div class="card" style="width: 30rem">
+          <img v-bind:src="event.Img" class="img-fluid" style="width: 30rem"  />
           <div class="card-body">
             <p class="card-text">{{ event.Title }}</p>
             <p class="card-text">{{ event.Date }}</p>
@@ -33,5 +31,8 @@ export default {
 };
 </script>
 <style>
+    .onecard{
+      padding: 50px;
+    }
     
 </style>
