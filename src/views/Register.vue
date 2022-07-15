@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div><h1>If You Are Not A User Please Register ... </h1>
         <form @submit.prevent="register">
             <input type="text" v-model="FullName" placeholder="Full Name">
             <input type="text" v-model="email" placeholder="Email">
@@ -36,6 +36,11 @@ export default {
     form{
         display: flex ;
         justify-content: center;
-        margin-top: 20px;
+       padding-top: 100px;
+    }
+    h1{
+        display: flex ;
+        justify-content: center;
+        padding-top: 100px;
     }
 </style>
