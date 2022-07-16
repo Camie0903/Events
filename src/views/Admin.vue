@@ -1,22 +1,23 @@
 <template>
-  <div class="adform">
+
+  <div class="row">
+    <span>
+      <ul>
+        <li class="active">EVENTS</li>
+      </ul>
+    </span>
+     <input class="search-admin" type="text" v-model="search" placeholder="Search by Private/Public Events" />
+
+     <div class="adform">
     <form @submit.prevent="createEvent()">
       <input type="text" v-model="Image" placeholder="IMG URL" />
       <input type="text" v-model="title" placeholder="Title" />
       <input type="text" v-model="date" placeholder="Date" />
       <input type="text" v-model="type" placeholder="Description" />
       <input type="text" v-model="Description" placeholder="Type" />
-      <button type="submit"><i class="fa-solid fa-circle-plus"></i></button>
+      <button type="submit">ADD EVENT</button>
     </form>
   </div>
-  <div class="row">
-      <input type="text" v-model="search" placeholder="Search..." />
-    <span>
-      <ul>
-        <li class="talk">C-A-S-H</li>
-        <li class="active">EVENTS</li>
-      </ul>
-    </span>
     <div class="filter-ui">
       <table>
         <tr class="table-header">
@@ -129,7 +130,18 @@ tr:hover {
   cursor: default;
   border: 1px solid #67b2e4;
 }
-
+.search-admin {
+  margin-top: 10px;
+  margin-left: 42vw;
+  font-size: 21px;
+  border: 0;
+  outline:0;
+  border-bottom: 2px solid black;
+  width: 18%;
+  font-size: 20px;
+  background: transparent;
+  color: black;
+}
 /* .username {
   color: #3498db;
 }
@@ -175,6 +187,7 @@ nav ul li {
   margin-right: 36px;
   text-align: center;
   font-size: 26px;
+  margin-top: 55px;
 }
 
 .roleHead {
@@ -221,16 +234,21 @@ tr.table-header {
   left: 20px;
 }
 
-input[type="text"] {
+.adform{
+  margin: 20px;
+  gap:5px;
+}
+
+/* input[type="text"] {
   padding: 6px;
   margin-top: 5px;
   font-size: 14px;
   width: 300px;
   border: 1px solid #9a9da0;
   border-radius: 2px;
-}
+} */
 
-.search-container button {
+/* .search-container button {
   padding: 10px 5px;
   margin-right: 16px;
   background: #ddd;
@@ -238,9 +256,9 @@ input[type="text"] {
   border: none;
   border-radius: 2px;
   cursor: pointer;
-}
+} */
 
-::-webkit-input-placeholder {
+/* ::-webkit-input-placeholder {
   color: #bbbebf;
   font-size: 13px;
 }
@@ -255,9 +273,9 @@ input[type="text"] {
 ::placeholder {
   color: #bbbebf;
   font-size: 13px;
-}
+} */
 
-.adform {
+/* .adform {
   padding-top: 60px;
-}
+} */
 </style>

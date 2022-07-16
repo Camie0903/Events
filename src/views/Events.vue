@@ -1,5 +1,5 @@
 <template>
-  <input class="SB" type="text" v-model="search" placeholder="Search..." />
+  <input class="SB" type="text" v-model="search" placeholder="Search by Public/Private Events" />
   <div class="row">
     <EventsCard
       v-for="event in filteredEvents"
@@ -39,5 +39,12 @@ export default {
   margin-top: 53px;
   margin-left: 42vw;
   font-size: 21px;
+  border: 0;
+  outline:0;
+  border-bottom: 2px solid black;
+  width: 18%;
+  font-size: 20px;
+  background: transparent;
+  color: black;
 }
 </style>

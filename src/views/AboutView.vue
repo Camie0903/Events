@@ -2,8 +2,7 @@
   <div class="about">
     <br />
     <br />
-    <br />
-    <br />
+   
     <h1>Welcome to Our Estate</h1>
     <br />
     <h2>
@@ -69,6 +68,7 @@
     </div>
   </div>
   <div class="offer">
+    <br />
     <h1>WHAT DO WE OFFER?</h1>
     <br />
     Since we are a team of young people we love hosting events, we are even on
@@ -117,7 +117,7 @@ ul,
   list-style: none;
   text-decoration: none;
 }
-nav {
+/* nav {
   padding: 30px;
 }
 nav a {
@@ -142,27 +142,28 @@ nav a.router-link-exact-active {
 body {
   font-family: "Open Sans", sans-serif;
   color: var(--gray);
-}
+} */
 .wrapper {
-  display: grid;
-  grid-template-columns: minmax(250px, 300px);
+  /* display: grid;
+  grid-template-columns: minmax(250px, 300px); */
+  display: flex;
   justify-content: center;
   gap: 2rem;
-  margin: 2rem;
 }
+
 .container {
-  box-shadow: 0rem 0.125rem 0.5rem 0rem var(--light-gray);
+  /* box-shadow: 0rem 0.125rem 0.5rem 0rem var(--light-gray); */
   width: 93%;
   text-align: center;
   border-radius: 1rem;
   position: relative;
   overflow: hidden;
   margin-left: 9vw;
-  background-color: burlywood;
+  background-color: transparent;
 }
 .banner-image {
   position: absolute;
-  background-image: url(https://i.postimg.cc/4345LkQH/httpsi-postimg-cczv-F6-BBGVagriculture-5144904-1920-jpg.jpg);
+  /* background-image: url(https://i.postimg.cc/4345LkQH/httpsi-postimg-cczv-F6-BBGVagriculture-5144904-1920-jpg.jpg); */
   height: 10rem;
   width: 100%;
   background-position: center;
@@ -175,9 +176,9 @@ body {
   margin-top: 5.5rem;
   transition: all 0.5s ease 0;
 }
-.profile-image:hover {
+/* .profile-image:hover {
   filter: grayscale(1);
-}
+} */
 .name {
   font-size: 1.5rem;
 }
@@ -185,7 +186,7 @@ body {
   margin: 1rem 2rem;
   font-size: 20px;
 }
-.btn {
+/* .btn {
   width: 100%;
   border: none;
   font-size: 1rem;
@@ -194,7 +195,7 @@ body {
   background-color: var(--primary);
   padding: 1rem;
   cursor: pointer;
-}
+} */
 *[data-v-4cebd208],
 *[data-v-4cebd208]::before,
 *[data-v-4cebd208]::after {

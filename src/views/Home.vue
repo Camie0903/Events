@@ -1,9 +1,9 @@
 <template>
   <div id="bpic">
-    <img
+    <!-- <img
       class="logo"
       src="https://i.postimg.cc/htJ3Nnbw/7f6b07f12af14ab2a682cf76089fcf6a-1.png"
-    />
+    /> -->
     <div class="container">
       <div class="heading">
         <h1><u>CASH EVENTS</u></h1>
@@ -55,18 +55,18 @@ export default {};
   padding: auto;
   width: 800px;
   height: 250px auto;
-  background-color: rgba(167, 165, 196, 0.3);
-  backdrop-filter: blur(3px);
+  background-color: rgba(167, 165, 196, 0.2);
+  backdrop-filter: blur(2px);
   border: 2px solid white;
   border-radius: 10px;
   background-clip: padding-box;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
-.logo {
+/* .logo {
   margin-top: 60px;
   height: 14vh;
   width: 10vw;
   border-radius: 25%;
-}
+} */
 </style>

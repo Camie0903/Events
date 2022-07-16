@@ -1,10 +1,13 @@
 <template>
   <header :class="{ 'scrolled-nav': scrollPosition }">
     <nav class="branding">
+        <h1 class="cash"> C-A-S-H   EVENTS</h1>
       <ul v-show="!mobile" class="navigation">
         <!-- <li>
           <router-link class="link" to="/">Home</router-link>
         </li> -->
+        
+  
         <li>
           <router-link class="link" to="/home">Home</router-link>
         </li>
@@ -40,6 +43,7 @@
       </div>
       <transition name="mobile-nav">
         <ul v-show="mobileNav" class="dropdown-nav">
+          <h1 class="cash"> C-A-S-H   EVENTS</h1>
           <!-- <li>
             <router-link class="link" to="/">Home</router-link>
           </li> -->
@@ -177,6 +181,13 @@ li {
   margin-top: 10px;
 }
 
+.cash{
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
 i {
   cursor: pointer;
   font-size: 24px;
@@ -205,7 +216,7 @@ icon-active {
 }
 
 .mobile-nav-enter-from,
-.mobile-nav-leave-to {
+.mobile-nav-leave-to{
   transform: translateX(-250px);
 }
 

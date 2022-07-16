@@ -28,10 +28,10 @@ export default {
 }
 body{
    background: linear-gradient(
-    75deg,
-    rgb(36, 134, 224),
-    rgb(121, 247, 247),
-    rgb(182, 105, 218)
+    83deg,
+    rgb(15, 108, 136),
+    rgb(65, 238, 166),
+    rgb(231, 226, 152)
   );
 }
 </style>
