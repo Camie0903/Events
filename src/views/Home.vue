@@ -53,7 +53,7 @@ export default {};
 .container {
   margin: auto;
   padding: auto;
-  width: 800px;
+  width: 80vw;
   height: 250px auto;
   background-color: rgba(167, 165, 196, 0.2);
   backdrop-filter: blur(2px);
@@ -61,6 +61,8 @@ export default {};
   border-radius: 10px;
   background-clip: padding-box;
   margin-bottom: 20px;
+  margin-bottom: 20px;
+  margin-left: 15vw;
 }
 
 /* .logo {
